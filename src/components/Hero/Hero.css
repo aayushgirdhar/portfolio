@@ -1,13 +1,58 @@
+.hero-background-circle {
+  height: 700px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  background-color: #232323;
+  left: calc(50% - 350px);
+  top: 20%;
+}
+
+.hero-background-cross {
+  height: 700px;
+  aspect-ratio: 1;
+  position: absolute;
+  z-index: -1;
+  left: 53%;
+  top: 30%;
+  rotate: 45deg;
+}
+
+.hero-background-cross:before,
+.hero-background-cross:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #151515;
+}
+
+.hero-background-cross:before {
+  left: 50%;
+  width: 12%;
+  margin-left: -6%;
+  height: 100%;
+}
+
+.hero-background-cross:after {
+  top: 50%;
+  height: 12%;
+  margin-top: -6%;
+  width: 100%;
+}
+
 .hero-section {
   margin: auto;
   width: 80%;
-  height: 100dvh;
+  height: calc(100dvh - 8rem);
   display: flex;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 .hero-left {
-  width: 60%;
+  width: 50%;
   line-height: 1.1;
+  margin-bottom: 7rem;
 }
 .hero-header {
   font-size: 4rem;
@@ -15,29 +60,32 @@
   color: #eee;
   margin-bottom: 1.5rem;
 }
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
 .hero-desc {
   color: #ddd;
   margin: 1.5rem 0;
 }
 
 .more-btn {
+  width: 175px;
+  margin: 4rem 0;
+  padding: 10px;
+  background: none;
+  color: #ddd;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: pointer;
-  width: 175px;
-  background: none;
-  border: none;
-  color: #ddd;
-  padding: 10px;
+  border: 1px solid #333;
   border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  border: 1px solid #333;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  margin: 4rem 0;
 }
 
 .more-btn::before {
@@ -86,7 +134,6 @@
   bottom: -5px;
   background: #ddd;
   height: 2px;
-  transition-property: width;
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .social-item:not(:nth-child(2)):hover {
@@ -97,4 +144,13 @@
   left: 0;
   right: auto;
   width: 100%;
+}
+
+.hero-right {
+  width: 50%;
+  margin-bottom: 7rem;
+}
+.hero-right img {
+  margin: auto;
+  width: 50%;
 }
