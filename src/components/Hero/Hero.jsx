@@ -18,8 +18,6 @@ const Hero = () => {
           <div className="social-item" >LinkedIn</div>
           <div className="social-item" >/</div>
           <div className="social-item" >GitHub</div>
-          <div className="social-item" >/</div>
-          <div className="social-item" >Instagram</div>
         </div>
       </div>
       <div className="hero-right"></div>
