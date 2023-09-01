@@ -139,8 +139,8 @@
 .social-item:not(:nth-child(2)):hover {
   transform: translate(10px);
 }
-.social-item:not(:nth-child(2)):hover::before,
-.social-item:not(:nth-child(2)):focus-visible:before {
+.social-item:hover::before,
+.social-item:focus-visible:before {
   left: 0;
   right: auto;
   width: 100%;
