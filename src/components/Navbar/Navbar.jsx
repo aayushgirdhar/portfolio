@@ -8,7 +8,7 @@ const Navbar = () => {
           <img src={pic} alt="me" />
         </div>
         <div className="nav-item">About Me</div>
-        <div className="nav-item">Portfolio</div>
+        <div className="nav-item">Projects</div>
         <div className="nav-item">Skills</div>
         <div className="nav-item">Resume</div>
         <div className="nav-item">Contact</div>
