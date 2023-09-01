@@ -13,10 +13,11 @@
   font-size: 4rem;
   letter-spacing: 3.5px;
   color: #eee;
+  margin-bottom: 1.5rem;
 }
 .hero-desc {
   color: #ddd;
-  margin-top: 1rem;
+  margin: 1.5rem 0;
 }
 
 .more-btn {
@@ -35,7 +36,8 @@
   isolation: isolate;
   overflow: hidden;
   border: 1px solid #333;
-  
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin: 4rem 0;
 }
 
 .more-btn::before {
@@ -48,13 +50,21 @@
   border-radius: 35px;
   transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform-origin: left;
-
 }
-.more-btn:hover::before, .more-btn:focus-visible::before {
+.more-btn:hover::before,
+.more-btn:focus-visible::before {
   width: 100%;
 }
 .more-btn:hover {
   translate: 20px;
+}
+
+.more-btn .arrow {
+  transition: transform 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.more-btn:hover .arrow {
+  transform: rotate(-30deg);
 }
 
 .social-links {
@@ -62,4 +72,10 @@
   display: flex;
   gap: 4rem;
 }
-
+.social-item {
+  cursor: pointer;
+  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.social-item:hover {
+  border-bottom: 1px solid #ddd;
+}
