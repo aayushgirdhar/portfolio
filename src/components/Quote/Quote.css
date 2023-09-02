@@ -1,0 +1,42 @@
+.quote-wrapper {
+  margin-top: 1.6rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 40dvh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #232323;
+}
+.quote {
+  font-size: 4rem;
+  width: 80%;
+  background: linear-gradient(
+    300deg,
+    #ffee07,
+    #ff2b6a,
+    #ab4bff,
+    #5ca2ff,
+    #df1700
+  );
+  background-size: 360% 360%;
+  animation: gradient-animation 30s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

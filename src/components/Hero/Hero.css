@@ -17,7 +17,7 @@
   height: 80px;
   width: 200px;
   border-radius: 0 40px 40px 0;
-  background-color: #333;
+  background-color: #232323;
   color: #ddd;
 }
 
@@ -72,6 +72,7 @@
   color: #eee;
   margin-bottom: 1.5rem;
 }
+
 .underline {
   text-decoration: underline;
   text-underline-offset: 10px;
