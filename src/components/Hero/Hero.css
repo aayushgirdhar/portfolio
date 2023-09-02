@@ -9,6 +9,18 @@
   top: 20%;
 }
 
+.location {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 80px;
+  width: 200px;
+  border-radius: 0 40px 40px 0;
+  background-color: #333;
+  color: #ddd;
+}
+
 .hero-background-cross {
   height: 700px;
   aspect-ratio: 1;

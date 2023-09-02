@@ -3,7 +3,7 @@ import Hero from "./components/Hero/Hero";
 function App() {
   return (
     <>
-      <Navbar />;
+      <Navbar />
       <Hero />
     </>
   );
