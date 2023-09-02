@@ -1,7 +1,9 @@
 .nav {
-  margin: 1rem auto 2.5rem;
+  margin: auto;
+  margin-bottom: 3.5rem;
+  /* margin: 1.5rem auto 2.5rem; */
   position: sticky;
-  top: 1rem;
+  top: 1.7rem;
   padding: 6px;
   width: 550px;
   background-color: #232323;

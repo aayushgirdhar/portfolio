@@ -9,33 +9,33 @@ const Hero = () => {
     <>
       <div className="hero-background-circle"></div>
       {/* <div className="hero-background-cross"></div> */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: -200 }}
         animate={{ x: 0 }}
         transition={{ type: "Spring", duration: 0.3 }}
         className="location"
       >
         <p>Located in India</p>
-      </motion.div>
+      </motion.div> */}
       <div className="hero-section">
         <div className="hero-left">
-          <motion.div
-            initial={{ opacity: 0, y: 350 }}
+          <motion.h1
+            className="hero-header"
+            initial={{ opacity: 0.01, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 0.6 }} // Animation duration
+            transition={{ type: "spring", duration: 0.8 }} // Animation duration
           >
-            <h1 className="hero-header">
-              <span className="hero-hi">Hi! I am Aayush Girdhar, a</span>
-              <span className="hero-role"> Full-stack Developer</span>.
-            </h1>
-          </motion.div>
+            <span className="hero-hi">Hi! I am Aayush Girdhar, a</span>
+            <span className="hero-role"> Full-stack Developer</span>.
+          </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1 }} // Animation duration
           >
             <button className="more-btn">
-              See my works <ArrowForwardOutlinedIcon className="arrow" />
+              See my works{" "}
+              <ArrowForwardOutlinedIcon className="arrow" fontSize="large" />
             </button>
           </motion.div>
           <motion.div
