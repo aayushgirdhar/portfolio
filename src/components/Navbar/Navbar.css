@@ -1,7 +1,6 @@
 .nav {
   margin: auto;
   margin-bottom: 3.5rem;
-  /* margin: 1.5rem auto 2.5rem; */
   position: sticky;
   top: 1.7rem;
   padding: 6px;
@@ -11,7 +10,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(100px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .nav-item {
