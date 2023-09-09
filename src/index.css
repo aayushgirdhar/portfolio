@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #1d1d1d;
+  /* cursor: none; */
 }
 
 img,
@@ -63,4 +64,12 @@ h6 {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #222;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -99;
+  backdrop-filter: blur(250px);
 }
