@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Blob.css";
 
 const Blob = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ x: 950, y: 500 });
 
   useEffect(() => {
     const handleMouseMove = (event) => {
