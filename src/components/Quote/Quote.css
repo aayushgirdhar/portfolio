@@ -9,11 +9,12 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  background-color: #232323;
+  /* background-color: #232323; */
 }
 .quote {
   font-size: 4rem;
   width: 80%;
+  /* color: #ddd; */
   background: linear-gradient(
     300deg,
     #ffee07,

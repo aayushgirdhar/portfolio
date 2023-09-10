@@ -9,7 +9,7 @@ const Quote = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
-        <span className="quotation-mark">"</span>Choose a job you love and you will never
+        Choose a job you love and you will never
         have to work a day in your life
       </motion.h1>
     </div>

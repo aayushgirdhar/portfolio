@@ -56,13 +56,12 @@ const Hero = () => {
         </div>
         <div className="hero-right">
           <motion.div
+            className="image-container"
             initial={{ opacity: 0, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 0.8 }} // Animation duration
           >
-            <div className="hero-img">
-              <img src={hi} alt="" />
-            </div>
+            <img className="hero-img" src={hi} alt="" />
           </motion.div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 #blob {
-  z-index: -100;
+  z-index: -6;
   height: 250px;
   aspect-ratio: 1;
   background: linear-gradient(to right, #ff5588, #ab4bff);
   position: fixed;
   border-radius: 50%;
   animation: rotate 20s infinite;
+  opacity: 0.6;
 }
 
 
@@ -13,8 +14,22 @@
   from {
     rotate: 0deg;
   }
+
+  0% {
+    scale: 1 2;
+  }
+
+  25% {
+    scale: 2 1;
+  }
   50% {
-    scale: 1 1.5;
+    scale: 1 2;
+  }
+  75% {
+    scale: 2 1;
+  }
+  100% {
+    scale: 1 2;
   }
   to {
     rotate: 360deg;

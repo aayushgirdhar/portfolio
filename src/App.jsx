@@ -5,11 +5,11 @@ import Blob from "./components/Blob/Blob";
 function App() {
   return (
     <>
-      <Blob />
       <div id="blur"></div>
       <Navbar />
       <Hero />
       <Quote />
+      <Blob />
     </>
   );
 }

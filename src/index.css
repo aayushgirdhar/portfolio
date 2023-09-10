@@ -70,6 +70,6 @@ h6 {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: -99;
-  backdrop-filter: blur(250px);
+  z-index: -5;
+  backdrop-filter: blur(170px);
 }

@@ -3,10 +3,11 @@
   aspect-ratio: 1;
   border-radius: 50%;
   position: absolute;
-  z-index: -2;
+  z-index: -1;
   background-color: #232323;
   left: calc(50% - 200px);
   top: 16%;
+  display: none;
 }
 
 .location {
@@ -164,11 +165,17 @@
 }
 
 .hero-right {
-  /* flex: 1; */
-  width: 40%;
-  margin-bottom: 4rem;
+  flex: 1;
+  /* width: 40%; */
+  margin-bottom: 7rem;
 }
-.hero-right img {
-  margin-left: 4.5rem;
-  height: 575px;
+.image-container {
+  width: 100%;
 }
+.hero-img {
+  object-fit: cover;
+  margin: auto;
+  height: 540px;
+  /* height: 30%; */
+}
+
