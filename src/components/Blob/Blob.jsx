@@ -26,8 +26,9 @@ const Blob = () => {
         top: `${position.y - 125}px`,
         left: `${position.x - 125}px`,
         rotate: [0, 360, 0],
-        scaleX: [1, 1.5, 1],
-        scaleY: [1.5, 1, 1.5],
+        scale: [1, 1.2, 1],
+        scaleX: [1, 1.3, 1],
+        scaleY: [1.3, 1, 1.3],
       }}
       transition={{
         left: {
@@ -43,19 +44,24 @@ const Blob = () => {
           stiffness: 20,
         },
         rotate: {
-          duration: 10,
+          duration: 4,
           repeat: Infinity,
           ease: "linear",
           stiffness: 20,
         },
+        scale: {
+          duration: 3,
+          repeat: Infinity,
+          ease: "linear",
+        },
         scaleX: {
-          duration: 10,
+          duration: 3,
           repeat: Infinity,
           ease: "linear",
           stiffness: 20,
         },
         scaleY: {
-          duration: 10,
+          duration: 3,
           repeat: Infinity,
           ease: "linear",
           stiffness: 20,

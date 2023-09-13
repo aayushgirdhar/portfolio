@@ -33,6 +33,9 @@ textarea,
 select {
   font: inherit;
 }
+input, textarea {
+  display: block;
+}
 
 a {
   color: inherit;

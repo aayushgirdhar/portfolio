@@ -13,7 +13,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .nav-item {
-  color: #eee;
+  color: #bbb;
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
@@ -30,6 +30,7 @@
 }
 
 .nav-item:last-child {
+  color: #eee;
   padding: 5px 13px;
   border-radius: 35px;
   background-color: #0064FF;
