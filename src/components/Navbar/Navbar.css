@@ -5,7 +5,7 @@
   top: 1.7rem;
   padding: 6px;
   width: 550px;
-  background-color: #232323;
+  background-color: var(--bg-secondary);
   border-radius: 35px;
   display: flex;
   justify-content: space-between;
@@ -13,14 +13,14 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .nav-item {
-  color: #bbb;
+  color: var(--text-tertiary);
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
 
 .nav-item:not(:last-child):not(:first-child):hover{
   scale: 1.1;
-  color: #277CFF;
+  color: var(--accent-secondary);
 }
 
 .nav-item > img {
@@ -30,7 +30,7 @@
 }
 
 .nav-item:last-child {
-  color: #eee;
+  color: var(--text-primary);
   padding: 5px 13px;
   border-radius: 35px;
   background-color: #0064FF;

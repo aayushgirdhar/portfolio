@@ -6,12 +6,12 @@
 .contact-header {
   text-align: center;
   font-size: 5rem;
-  color: #eee;
+  color: var(--text-primary);
 }
 .contact-subheader {
   text-wrap: balance;
   font-size: 1.1rem;
-  color: #bbb;
+  color: var(--text-tertiary);
   width: 40%;
   text-align: center;
   margin: 0 auto;
@@ -27,7 +27,7 @@
   padding: 35px 20px;
   border-radius: 20px;
   width: 45rem;
-  background-color: #232323;
+  background-color: var(--bg-secondary);
 }
 
 .floating-label-group {
@@ -38,8 +38,8 @@
   pointer-events: none;
   top: 13px;
   left: 13px;
-  color: #bbb;
-  background-color: #232323;
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
   width: 3rem;
   text-align: center;
   opacity: 0.5;
@@ -54,7 +54,7 @@
   left: 13px;
   font-size: 14px;
   opacity: 1;
-  color: #0064ff;
+  color: var(--accent-primary);
 }
 .contact-name:not(:focus):valid ~ .floating-label,
 .contact-email:not(:focus):valid ~ .floating-label {
@@ -78,8 +78,8 @@
   border-radius: 10px;
   padding: 13px;
   border: none;
-  color: #eee;
-  background-color: #232323;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
 }
 .contact-name,
 .contact-email,
@@ -91,7 +91,7 @@
 .contact-name:focus,
 .contact-email:focus,
 .contact-msg:focus {
-  outline: 2px solid #0064ff;
+  outline: 2px solid var(--accent-primary);
 }
 .contact-msg {
   width: 100%;
@@ -101,7 +101,8 @@
 .contact-submit {
   cursor: pointer;
   height: 50px;
-  background-color: #0064ff;
+  background-color: var(--accent-primary);
+  color: var(--text-secondary);
   border-radius: 10px;
   width: 100%;
 }
@@ -124,9 +125,9 @@
   background-color: #333;
   height: 60px;
   aspect-ratio: 1;
-  color: #bbb;
+  color: var(--text-tertiary);
   transition: color 200ms ease-in-out;
 }
 .contact-social-item:hover {
-  color: #eee;
+  color: var(--text-primary);
 }
