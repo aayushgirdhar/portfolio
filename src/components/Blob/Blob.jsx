@@ -11,9 +11,6 @@ const Blob = () => {
       setPosition({ x: clientX, y: clientY });
     };
     document.addEventListener("mousemove", handleMouseMove);
-
-    const blob = document.getElementById("blob");
-    blob.animate;
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
@@ -36,6 +33,7 @@ const Blob = () => {
           ease: "linear",
           repeat: 0,
           stiffness: 20,
+          
         },
         top: {
           duration: 0.2,

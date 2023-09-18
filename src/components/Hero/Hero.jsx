@@ -7,7 +7,15 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <>
-      <div className="hero-background-circle"></div>
+      <motion.div
+        className="hero-background-circle"
+        initial={{ opacity: 0.01, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 0.3, stiffness: 200 }}
+      ></motion.div>
+
+
+
       {/* <div className="hero-background-cross"></div> */}
       {/* <motion.div
         initial={{ x: -200 }}
@@ -17,6 +25,9 @@ const Hero = () => {
       >
         <p>Located in India</p>
       </motion.div> */}
+
+
+      
       <div className="hero-section">
         <div className="hero-left">
           <motion.h1

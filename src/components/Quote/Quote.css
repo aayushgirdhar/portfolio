@@ -9,7 +9,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  /* background-color: #232323; */
+  background-color: #232323;
 }
 .quote {
   font-size: 4rem;

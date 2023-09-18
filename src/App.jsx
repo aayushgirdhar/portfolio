@@ -6,8 +6,8 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
-      <div id="blur"></div>
-      <Blob />
+      {/* <div id="blur"></div> */}
+      {/* <Blob /> */}
       <Navbar />
       <Hero />
       <Quote />
