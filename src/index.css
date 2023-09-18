@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --text-primary: #eee;
+  --text-secondary: #ddd;
+  --text-tertiary: #bbb;
+
+  --bg-primary: #1d1d1d;
+  --bg-secondary: #232323;
+
+  --accent-primary: #0064ff;
+  --accent-secondary: #277cff;
+}
+
 *,
 *::before,
 *::after {
@@ -14,7 +26,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #1d1d1d;
+  background-color: var(--bg-primary);
   /* cursor: none; */
 }
 
@@ -33,7 +45,8 @@ textarea,
 select {
   font: inherit;
 }
-input, textarea {
+input,
+textarea {
   display: block;
 }
 
