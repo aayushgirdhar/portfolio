@@ -9,6 +9,7 @@
   color: #eee;
 }
 .contact-subheader {
+  text-wrap: balance;
   font-size: 1.1rem;
   color: #bbb;
   width: 40%;
@@ -16,39 +17,81 @@
   margin: 0 auto;
 }
 .contact-wrapper {
-  display: flex;
-  gap: 2rem;
+  position: relative;
+  /* display: flex; */
+  /* gap: 2rem; */
   margin: 2rem auto;
 }
 .form {
-  padding: 20px;
+  margin-top: 1.5rem;
+  padding: 35px 20px;
   border-radius: 20px;
-  width: 36rem;
+  width: 45rem;
   background-color: #232323;
 }
 
+.floating-label-group {
+  position: relative;
+}
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 13px;
+  left: 13px;
+  color: #bbb;
+  background-color: #232323;
+  width: 3rem;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.contact-name:focus ~ .floating-label,
+.contact-email:focus ~ .floating-label,
+.contact-name:not(:focus):valid ~ .floating-label,
+.contact-email:not(:focus):valid ~ .floating-label {
+  top: -13px;
+  left: 13px;
+  font-size: 14px;
+  opacity: 1;
+  color: #0064ff;
+}
+.contact-name:not(:focus):valid ~ .floating-label,
+.contact-email:not(:focus):valid ~ .floating-label {
+  color: #6f6f6f;
+}
 .top-row {
   display: flex;
   gap: 1rem;
 }
-.contact-name, .contact-email {
-  width: 50%;
+.floating-label-group {
+  width: 100%;
 }
-
-.contact-name, .contact-email, .contact-msg, .contact-submit {
+.contact-name,
+.contact-email {
+  width: 100%;
+}
+.contact-name,
+.contact-email,
+.contact-msg,
+.contact-submit {
   border-radius: 10px;
   padding: 13px;
-  outline: 2px solid #333;
   border: none;
   color: #eee;
-  background-color: #333;
+  background-color: #232323;
 }
-.contact-name, .contact-email, .contact-msg {
+.contact-name,
+.contact-email,
+.contact-msg {
+  outline: 2px solid #333;
   margin-bottom: 1rem;
   transition: outline 200ms ease-in-out;
 }
-.contact-name:focus, .contact-email:focus, .contact-msg:focus {
-  outline: 2px solid #0064FF;
+.contact-name:focus,
+.contact-email:focus,
+.contact-msg:focus {
+  outline: 2px solid #0064ff;
 }
 .contact-msg {
   width: 100%;
@@ -58,47 +101,32 @@
 .contact-submit {
   cursor: pointer;
   height: 50px;
-  background-color: #0064FF;
+  background-color: #0064ff;
   border-radius: 10px;
   width: 100%;
 }
 .contact-socials {
-  background-color: #232323;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
-  gap: 0.3rem;
+  gap: 2rem;
+  border-radius: 26px;
+  position: absolute;
+  top: 0;
+  left: -100px;
+  transform: translateY(calc(50% - 3rem));
+  z-index: -1;
 }
 .contact-social-item {
-  height: 50px;
-  width: 200px;
-  padding: 10px;
-  color: #bbb;
-  background-color: #333;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.9rem;
-  transition: color 250ms ease-in-out;
+  background-color: #333;
+  height: 60px;
+  aspect-ratio: 1;
+  color: #bbb;
+  transition: color 200ms ease-in-out;
 }
-.github {
-  border-radius: 10px 10px 2px 2px;
-}
-.linkedin {
-  border-radius: 2px;
-}
-.whatsapp {
-  border-radius: 2px 2px 10px 10px;
-}
-.email {
-  color: #eee;
-  justify-content: center;
-  background-color: #0064FF;
-  border-radius: 10px;
-  margin-top: auto;
-}
-.contact-social-item:not(:last-child):hover {
+.contact-social-item:hover {
   color: #eee;
 }

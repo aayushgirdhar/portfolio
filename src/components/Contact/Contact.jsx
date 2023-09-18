@@ -21,24 +21,26 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 0.8 }}
       >
-        Interested in working with me? Send me a message or contact me on my
-        socials, I'll get back to you shortly!
+        Interested in working with me? Feel free to reach out, I'll respond
+        shortly!
       </motion.p>
       <div className="contact-wrapper">
         <motion.div
           className="form"
-          initial={{ opacity: 0.01, x: -350 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.01, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1 }}
         >
           <form>
             <div className="top-row">
-              <input type="text" placeholder="Name" className="contact-name" />
-              <input
-                type="email"
-                placeholder="Email address"
-                className="contact-email"
-              />
+              <div className="floating-label-group">
+                <input type="text" className="contact-name" required autoCapitalize="true"/>
+                <span className="floating-label">Name</span>
+              </div>
+              <div className="floating-label-group">
+                <input type="email" className="contact-email" required  />
+                <span className="floating-label">Email</span>
+              </div>
             </div>
             <textarea
               name=""
@@ -49,7 +51,18 @@ const Contact = () => {
             <button className="contact-submit">Submit</button>
           </form>
         </motion.div>
-        <motion.div
+        {/* <motion.div className="contact-socials">
+          <div className="contact-social-item">
+            <GitHubIcon fontSize="large" />
+          </div>
+          <div className="contact-social-item">
+            <LinkedInIcon fontSize="large" />
+          </div>
+          <div className="contact-social-item">
+            <WhatsAppIcon fontSize="large" />
+          </div>
+        </motion.div> */}
+        {/* <motion.div
           className="contact-socials"
           initial={{ opacity: 0.01, x: 350 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -67,7 +80,7 @@ const Contact = () => {
             WhatsApp
           </div>
           <div className="contact-social-item email">Copy my email</div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );
