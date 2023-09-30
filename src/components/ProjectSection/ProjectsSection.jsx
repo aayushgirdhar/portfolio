@@ -1,6 +1,8 @@
 import React from "react";
+import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
+import { motion } from "framer-motion";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import "./ProjectSection.css"
+import "./ProjectSection.css";
 const ProjectList = () => {
   const projectData = [
     {
@@ -21,10 +23,42 @@ const ProjectList = () => {
   ];
 
   return (
-    <div className="project-ProjectSection" >
-      {projectData.map((project) => {
-        return <ProjectCard {...project} />;
-      })}
+    <div className="project-section-wrapper">
+      <motion.h1
+        className="project-section-header"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        Crafted with love.
+      </motion.h1>
+      <motion.p
+        className="project-section-subheader"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        These are a selection of my recent works.
+      </motion.p>
+      <div className="projects-container">
+        {projectData.map((project, index) => {
+          return <ProjectCard {...project} index={index + 1} />;
+        })}
+      </div>
+      <motion.p
+        className="project-section-more"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        There's More
+        <a href="https://github.com/AayushG02" target="_blank">
+          View all projects <ArrowForwardOutlinedIcon fontSize="large"/>
+        </a>
+      </motion.p>
     </div>
   );
 };
