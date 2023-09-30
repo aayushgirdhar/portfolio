@@ -1,8 +1,8 @@
 import React from "react";
-import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import hi from "../../assets/hi.webp";
 import { motion } from "framer-motion";
 import "./Hero.css";
+import CustomButton from "../CustomButton/CustomButton";
 
 const Hero = () => {
   return (
@@ -14,8 +14,6 @@ const Hero = () => {
         transition={{ type: "spring", duration: 0.3, stiffness: 200 }}
       ></motion.div>
 
-
-
       {/* <div className="hero-background-cross"></div> */}
       {/* <motion.div
         initial={{ x: -200 }}
@@ -26,8 +24,6 @@ const Hero = () => {
         <p>Located in India</p>
       </motion.div> */}
 
-
-      
       <div className="hero-section">
         <div className="hero-left">
           <motion.h1
@@ -44,10 +40,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1 }} // Animation duration
           >
-            <button className="more-btn">
-              See my works{" "}
-              <ArrowForwardOutlinedIcon className="arrow" fontSize="large" />
-            </button>
+            <CustomButton text="See my works" size="large"/>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 350 }}
@@ -58,9 +51,16 @@ const Hero = () => {
               <a href="https://linkedin.com/in/aayushgirdhar" target="_blank">
                 <div className="social-item">LinkedIn</div>
               </a>
-              <div className>/</div>
+              <div>/</div>
               <a href="https://github.com/AayushG02" target="_blank">
                 <div className="social-item">GitHub</div>
+              </a>
+              <div>/</div>
+              <a
+                href="https://drive.google.com/file/d/1UEgRjk1GtQp9Wtb63qAuMvGuyemRbq0p/view?usp=sharing"
+                target="_blank"
+              >
+                <div className="social-item">My Resume</div>
               </a>
             </div>
           </motion.div>

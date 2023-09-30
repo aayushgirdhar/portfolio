@@ -4,13 +4,12 @@
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  background-color: #232323;
+  background-color: var(--bg-secondary);
   left: calc(50% - 200px);
   top: 16%;
 }
 
 .location {
-  
   position: absolute;
   display: none;
   align-items: center;
@@ -18,8 +17,8 @@
   height: 100px;
   width: 220px;
   border-radius: 0 55px 55px 0;
-  background-color: #232323;
-  color: #ddd;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
 }
 
 .hero-background-cross {
@@ -64,78 +63,26 @@
 }
 .hero-left {
   flex: 1;
-  /* width: 50%; */
   margin-bottom: 7rem;
 }
 .hero-header {
   font-size: 5rem;
   letter-spacing: 3.5px;
-  color: #eee;
+  color: var(--text-primary);
   line-height: 1.3;
+  margin-bottom: 4rem;
 }
 
 .underline {
   text-decoration: underline;
   text-underline-offset: 10px;
 }
-.hero-desc {
-  color: #ddd;
-  margin: 1.5rem 0;
-}
-
-.more-btn {
-  font-size: 1.3rem;
-  width: 250px;
-  margin: 4rem 0;
-  padding: 20px;
-  background: none;
-  color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: none;
-  /* border: 1px solid #333; */
-  border-radius: 35px;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-  cursor: pointer;
-  transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.more-btn::before {
-  width: 70px;
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: #0064FF;
-  inset: 0;
-  border-radius: 35px;
-  transition: all 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transform-origin: left;
-}
-.more-btn:hover::before,
-.more-btn:focus-visible::before {
-  width: 100%;
-}
-.more-btn:hover {
-  translate: 20px;
-}
-
-
-.more-btn .arrow {
-  transition: transform 450ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.more-btn:hover .arrow {
-  transform: rotate(-30deg);
-}
 
 .social-links {
-  color: #ddd;
+  color: var(--text-tertiary);
   display: flex;
   gap: 4rem;
+  margin-top: 4rem;
 }
 .social-item:not(:nth-child(2)) {
   cursor: pointer;
@@ -149,7 +96,7 @@
   right: 0;
   width: 0;
   bottom: -5px;
-  background: #ddd;
+  background: var(--text-tertiary);
   height: 2px;
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -165,7 +112,6 @@
 
 .hero-right {
   flex: 1;
-  /* width: 40%; */
   margin-bottom: 7rem;
 }
 .image-container {
@@ -175,6 +121,4 @@
   object-fit: cover;
   margin: auto;
   height: 540px;
-  /* height: 30%; */
 }
-
