@@ -12,6 +12,7 @@ const Contact = () => {
         initial={{ opacity: 0.01, y: 150 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 0.6 }}
+        viewport={{ once: true }}
       >
         Get in touch.
       </motion.h1>
@@ -20,6 +21,7 @@ const Contact = () => {
         initial={{ opacity: 0.01, y: 150 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", duration: 0.8 }}
+        viewport={{ once: true }}
       >
         Interested in working with me? Feel free to reach out, I'll respond
         shortly!
@@ -30,15 +32,21 @@ const Contact = () => {
           initial={{ opacity: 0.01, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 1 }}
+          viewport={{ once: true }}
         >
           <form>
             <div className="top-row">
               <div className="floating-label-group">
-                <input type="text" className="contact-name" required autoCapitalize="true"/>
+                <input
+                  type="text"
+                  className="contact-name"
+                  required
+                  autoCapitalize="true"
+                />
                 <span className="floating-label">Name</span>
               </div>
               <div className="floating-label-group">
-                <input type="email" className="contact-email" required  />
+                <input type="email" className="contact-email" required />
                 <span className="floating-label">Email</span>
               </div>
             </div>
