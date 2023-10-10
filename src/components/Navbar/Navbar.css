@@ -1,11 +1,13 @@
 .nav {
   z-index: 5;
+  margin: auto;
   margin-bottom: 3.5rem;
   position: sticky;
-  top: 0;
-  padding: 6px 50px;
-  height: 80px;
+  top: 1.7rem;
+  padding: 6px;
+  width: 550px;
   background-color: var(--bg-secondary);
+  border-radius: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,19 +18,21 @@
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
-.nav-left .nav-item {
-  font-family: "Satisfy", cursive;
-  color: var(--text-primary);
-  font-size: 3rem;
-}
 
-.nav-right {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-.nav-right .nav-item:hover {
+.nav-item:not(:last-child):not(:first-child):hover{
   scale: 1.1;
   color: var(--accent-secondary);
+}
+
+.nav-item > img {
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.nav-item:last-child {
+  color: var(--text-primary);
+  padding: 5px 13px;
+  border-radius: 35px;
+  background-color: #0064FF;
 }

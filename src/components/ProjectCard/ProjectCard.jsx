@@ -18,12 +18,11 @@ const ProjectCard = (props) => {
       <div className="project-wrapper">
         <div className="project-left">
           <h2 className="project-title">{props.title}</h2>
+          {/* <p className="project-subtitle">{props.subTitle}</p> */}
           <p className="project-stack">{props.stack}</p>
         </div>
         <div className="project-right">
-          <a href={props.url} target="_blank">
-            <CustomButton text="View project" size="medium" />
-          </a>
+          <CustomButton text="View project" size="medium"/>
         </div>
       </div>
     </motion.div>

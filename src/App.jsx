@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import PreLoader from "./components/PreLoader/PreLoader";
+import Blob from "./components/Blob/Blob";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Quote from "./components/Quote/Quote";
 import Contact from "./components/Contact/Contact";
 import ProjectSection from "./components/ProjectSection/ProjectsSection";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 function App() {
   const [isloading, setLoading] = useState(false);
 
@@ -26,7 +26,6 @@ function App() {
         <PreLoader />
       ) : (
         <>
-          <ScrollToTop />
           <Navbar />
           <Hero />
           <Quote />
@@ -36,6 +35,12 @@ function App() {
       )}
     </>
   );
+}
+{
+  /* <div id="blur"></div> */
+}
+{
+  /* <Blob /> */
 }
 
 export default App;

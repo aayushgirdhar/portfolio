@@ -1,13 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
+import pic from "../../assets/pic.webp";
 const Navbar = () => {
-  const handleScroll = (link) => {
-    const element = document.getElementById(link);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     <motion.nav
       initial={{ opacity: 0, scale: 0.25 }}
@@ -15,17 +10,14 @@ const Navbar = () => {
       transition={{ type: "spring", duration: 0.7 }}
       className="nav"
     >
-      <div className="nav-left">
-        <div className="nav-item">ag</div>
-      </div>
-      <div className="nav-right">
-        <div className="nav-item" onClick={() => handleScroll("projects")}>
-          Works
+        <div className="nav-item">
+          <img src={pic} alt="me" />
         </div>
-        <div className="nav-item" onClick={() => handleScroll("contact")}>
-          Contact
-        </div>
-      </div>
+        <div className="nav-item">About Me</div>
+        <div className="nav-item">Projects</div>
+        <div className="nav-item">Skills</div>
+        <div className="nav-item">Resume</div>
+        <div className="nav-item">Contact</div>
     </motion.nav>
   );
 };

@@ -9,24 +9,21 @@ const ProjectList = () => {
       title: "Workout Buddy",
       subTitle: "Workout Tracker",
       stack: "MERN, JWT",
-      url: "https://github.com/AayushG02/WorkoutBuddy--client",
     },
     {
       title: "LuxeThreads",
       subTitle: "E-commerce Store",
       stack: "MERN, Strapi CMS, Stripe",
-      url: "https://github.com/AayushG02/LuxeThreads--client",
     },
     {
       title: "Keepr",
       subTitle: "Note Taking App",
       stack: "ReactJS",
-      url: "https://github.com/AayushG02/Keepr",
     },
   ];
 
   return (
-    <div className="project-section-wrapper" id="projects">
+    <div className="project-section-wrapper">
       <motion.h1
         className="project-section-header"
         initial={{ opacity: 0, y: 100 }}
@@ -47,7 +44,7 @@ const ProjectList = () => {
       </motion.p>
       <div className="projects-container">
         {projectData.map((project, index) => {
-          return <ProjectCard {...project} key={index} index={index + 1} />;
+          return <ProjectCard {...project} index={index + 1} />;
         })}
       </div>
       <motion.p
@@ -59,7 +56,7 @@ const ProjectList = () => {
       >
         There's More
         <a href="https://github.com/AayushG02" target="_blank">
-          View all projects <ArrowForwardOutlinedIcon fontSize="large" />
+          View all projects <ArrowForwardOutlinedIcon fontSize="large"/>
         </a>
       </motion.p>
     </div>

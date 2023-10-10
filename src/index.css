@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 :root {
   --text-primary: #eee;
@@ -22,15 +21,14 @@
 * {
   margin: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg-primary);
+  /* cursor: none; */
 }
 
 img,

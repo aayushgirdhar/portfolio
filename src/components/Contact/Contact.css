@@ -18,6 +18,8 @@
 }
 .contact-wrapper {
   position: relative;
+  /* display: flex; */
+  /* gap: 2rem; */
   margin: 2rem auto;
 }
 .form {
