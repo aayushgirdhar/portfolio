@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Quote.css"
+import "./Quote.css";
 const Quote = () => {
   return (
     <div className="quote-wrapper">
