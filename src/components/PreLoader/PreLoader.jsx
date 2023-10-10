@@ -6,8 +6,7 @@ const PreLoader = () => {
     <div className="preloader-container">
       <motion.div
         initial={{ opacity: 0.01, scale: 2 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0.01, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 0.9 }}
         className="text"
       >
         Aayush Girdhar
