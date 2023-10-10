@@ -25,6 +25,7 @@
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: var(--bg-primary);
   /* cursor: none; */
