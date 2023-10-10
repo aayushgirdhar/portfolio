@@ -1,12 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { app } from "../../firebase";
 import "./Contact.css";
 import { motion } from "framer-motion";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  const handleSubmit = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    const db = getFirestore(app);
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        msg,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+    setLoading(false);
+    toast.success("Message sent successfully!", {
+      duration: 2000,
+      position: "bottom-left",
+      style: {
+        borderRadius: "10px",
+        background: "#232323",
+        color: "#eee",
+      },
+    });
+    setName("");
+    setEmail("");
+    setMsg("");
+  };
+
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
+      <Toaster />
       <motion.h1
         className="contact-header"
         initial={{ opacity: 0.01, y: 150 }}
@@ -34,61 +68,45 @@ const Contact = () => {
           transition={{ type: "spring", duration: 1 }}
           viewport={{ once: true }}
         >
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="top-row">
               <div className="floating-label-group">
                 <input
                   type="text"
+                  name="name"
                   className="contact-name"
                   required
                   autoCapitalize="true"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
                 <span className="floating-label">Name</span>
               </div>
               <div className="floating-label-group">
-                <input type="email" className="contact-email" required />
+                <input
+                  type="email"
+                  name="email"
+                  className="contact-email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
                 <span className="floating-label">Email</span>
               </div>
             </div>
             <textarea
-              name=""
-              id=""
+              name="msg"
               placeholder="Your message for me"
               className="contact-msg"
+              required
+              value={msg}
+              onChange={(e) => setMsg(e.target.value)}
             ></textarea>
-            <button className="contact-submit">Submit</button>
+            <button type="submit" className="contact-submit" disabled={loading}>
+              Submit
+            </button>
           </form>
         </motion.div>
-        {/* <motion.div className="contact-socials">
-          <div className="contact-social-item">
-            <GitHubIcon fontSize="large" />
-          </div>
-          <div className="contact-social-item">
-            <LinkedInIcon fontSize="large" />
-          </div>
-          <div className="contact-social-item">
-            <WhatsAppIcon fontSize="large" />
-          </div>
-        </motion.div> */}
-        {/* <motion.div
-          className="contact-socials"
-          initial={{ opacity: 0.01, x: 350 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ type: "spring", duration: 1 }}
-        >
-          <div className="contact-social-item github">
-            <GitHubIcon /> Github
-          </div>
-          <div className="contact-social-item linkedin">
-            <LinkedInIcon />
-            LinkedIn
-          </div>
-          <div className="contact-social-item whatsapp">
-            <WhatsAppIcon />
-            WhatsApp
-          </div>
-          <div className="contact-social-item email">Copy my email</div>
-        </motion.div> */}
       </div>
     </div>
   );
