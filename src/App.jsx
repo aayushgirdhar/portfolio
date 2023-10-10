@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import PreLoader from "./components/PreLoader/PreLoader";
 import Blob from "./components/Blob/Blob";
 import Navbar from "./components/Navbar/Navbar";
