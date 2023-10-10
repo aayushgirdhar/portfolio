@@ -1,4 +1,5 @@
 import React from "react";
+import SouthIcon from "@mui/icons-material/South";
 import hi from "../../assets/hi.webp";
 import { motion } from "framer-motion";
 import "./Hero.css";
@@ -14,23 +15,16 @@ const Hero = () => {
         transition={{ type: "spring", duration: 0.3, stiffness: 200 }}
       ></motion.div>
 
-      {/* <div className="hero-background-cross"></div> */}
-      {/* <motion.div
-        initial={{ x: -200 }}
-        animate={{ x: 0 }}
-        transition={{ type: "Spring", duration: 0.3 }}
-        className="location"
-      >
-        <p>Located in India</p>
-      </motion.div> */}
-
       <div className="hero-section">
+        <div className="scroll-down">
+          <SouthIcon /> DOWN
+        </div>
         <div className="hero-left">
           <motion.h1
             className="hero-header"
             initial={{ opacity: 0.01, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 0.8 }} // Animation duration
+            transition={{ type: "spring", duration: 0.8 }}
           >
             <span className="hero-hi">Hi! I am Aayush Girdhar, a</span>
             <span className="hero-role"> Full-stack Developer</span>.
@@ -38,14 +32,14 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1 }} // Animation duration
+            transition={{ type: "spring", duration: 1 }}
           >
-            <CustomButton text="See my works" size="large"/>
+            <CustomButton text="See my works" size="large" link="projects" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1.2 }} // Animation duration
+            transition={{ type: "spring", duration: 1.2 }}
           >
             <div className="social-links">
               <a href="https://linkedin.com/in/aayushgirdhar" target="_blank">
@@ -70,7 +64,7 @@ const Hero = () => {
             className="image-container"
             initial={{ opacity: 0, y: 350 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 0.8 }} // Animation duration
+            transition={{ type: "spring", duration: 0.8 }}
           >
             <img className="hero-img" src={hi} alt="" />
           </motion.div>
