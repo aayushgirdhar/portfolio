@@ -9,19 +9,19 @@ const ProjectList = () => {
       title: "Workout Buddy",
       subTitle: "Workout Tracker",
       stack: "MERN, JWT",
-      url: "https://github.com/AayushG02/WorkoutBuddy--client",
+      url: "https://workoutbuddyapp.netlify.app",
     },
     {
       title: "LuxeThreads",
       subTitle: "E-commerce Store",
       stack: "MERN, Strapi CMS, Stripe",
-      url: "https://github.com/AayushG02/LuxeThreads--client",
+      url: "https://luxethreads.netlify.app",
     },
     {
       title: "Keepr",
       subTitle: "Note Taking App",
       stack: "ReactJS",
-      url: "https://github.com/AayushG02/Keepr",
+      url: "https://keeprapp.netlify.app",
     },
   ];
 

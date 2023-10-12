@@ -34,7 +34,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", duration: 1 }}
           >
-            <CustomButton text="See my works" size="large" link="projects" />
+            <CustomButton text="See my work" size="large" link="projects" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 350 }}

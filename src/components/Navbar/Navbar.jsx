@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <div className="nav-right">
         <div className="nav-item" onClick={() => handleScroll("projects")}>
-          Works
+          Work
         </div>
         <div className="nav-item" onClick={() => handleScroll("contact")}>
           Contact
