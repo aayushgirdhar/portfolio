@@ -17,6 +17,7 @@
   margin: 0 auto;
 }
 .contact-wrapper {
+  width: 40%;
   position: relative;
   margin: 2rem auto;
 }
@@ -24,7 +25,6 @@
   margin-top: 1.5rem;
   padding: 35px 20px;
   border-radius: 20px;
-  width: 45rem;
   background-color: var(--bg-secondary);
 }
 
@@ -104,7 +104,7 @@
   border-radius: 10px;
   width: 100%;
 }
-.contact-socials {
+/* .contact-socials {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -128,4 +128,22 @@
 }
 .contact-social-item:hover {
   color: var(--text-primary);
+} */
+
+
+@media screen and (width <= 768px) {
+  .contact-header {
+    font-size: 3.5rem;
+  }
+  .contact-subheader {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .contact-wrapper {
+    width: 90%;
+  }
+  .top-row {
+    flex-direction: column;
+    gap: 0;
+  }
 }

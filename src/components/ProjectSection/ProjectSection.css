@@ -34,3 +34,21 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+@media screen and (width <= 768px) {
+  .project-section-header, .project-section-subheader  {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-section-header {
+    font-size: 3.5rem;
+  }
+  .project-section-subheader {
+    font-size: 0.813rem;
+  }
+  .project-section-more a {
+   font-size: 2rem; 
+  }
+}

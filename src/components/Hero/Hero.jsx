@@ -16,9 +16,6 @@ const Hero = () => {
       ></motion.div>
 
       <div className="hero-section">
-        <div className="scroll-down">
-          <SouthIcon /> DOWN
-        </div>
         <div className="hero-left">
           <motion.h1
             className="hero-header"

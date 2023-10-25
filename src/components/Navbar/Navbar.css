@@ -1,12 +1,12 @@
 .nav {
+  display: flex;
+  margin-bottom: 3rem;
   z-index: 5;
-  margin-bottom: 3.5rem;
   position: sticky;
   top: 0;
   padding: 6px 50px;
   height: 80px;
   background-color: var(--bg-secondary);
-  display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -31,4 +31,11 @@
 .nav-right .nav-item:hover {
   scale: 1.1;
   color: var(--accent-secondary);
+}
+
+@media screen and (max-width: 425px) {
+  .nav {
+    padding: 6px 20px;
+    margin-bottom: 18rem;
+  }
 }
