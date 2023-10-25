@@ -104,32 +104,6 @@
   border-radius: 10px;
   width: 100%;
 }
-/* .contact-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  border-radius: 26px;
-  position: absolute;
-  top: 0;
-  left: -100px;
-  transform: translateY(calc(50% - 3rem));
-  z-index: -1;
-}
-.contact-social-item {
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #333;
-  height: 60px;
-  aspect-ratio: 1;
-  color: var(--text-tertiary);
-  transition: color 200ms ease-in-out;
-}
-.contact-social-item:hover {
-  color: var(--text-primary);
-} */
-
 
 @media screen and (width <= 768px) {
   .contact-header {

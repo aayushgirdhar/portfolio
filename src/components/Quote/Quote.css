@@ -42,7 +42,7 @@
 }
 @media (max-width: 1024px) {
   .quote {
-    font-size: 3rem; /* Define an appropriate font size for larger screens */
+    font-size: 3rem;
   }
 }
 
