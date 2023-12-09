@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["react-hot-toast", "firebase/firestore", "framer-motion", "react"],
+      external: ["react-hot-toast", "firebase/firestore", "framer-motion", "react", "firebase/app"],
     },
   },
 });
