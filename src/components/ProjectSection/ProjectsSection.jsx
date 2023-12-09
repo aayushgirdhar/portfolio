@@ -6,16 +6,16 @@ import "./ProjectSection.css";
 const ProjectList = () => {
   const projectData = [
     {
+      title: "LuxeThreads",
+      subTitle: "E-commerce Store",
+      stack: "MERN, JWT, Stripe, Cloudinary",
+      url: "https://luxethreads.netlify.app",
+    },
+    {
       title: "Workout Buddy",
       subTitle: "Workout Tracker",
       stack: "MERN, JWT",
       url: "https://workoutbuddyapp.netlify.app",
-    },
-    {
-      title: "LuxeThreads",
-      subTitle: "E-commerce Store",
-      stack: "MERN, Strapi CMS, Stripe",
-      url: "https://luxethreads.netlify.app",
     },
     {
       title: "Keepr",
