@@ -58,7 +58,7 @@ const ProjectList = () => {
         viewport={{ once: true }}
       >
         There's More
-        <a href="https://github.com/AayushG02" target="_blank">
+        <a href="https://github.com/aayushgirdhar" target="_blank">
           View all projects <ArrowForwardOutlinedIcon fontSize="large" />
         </a>
       </motion.p>
