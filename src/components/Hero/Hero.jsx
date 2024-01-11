@@ -43,7 +43,7 @@ const Hero = () => {
                 <div className="social-item">LinkedIn</div>
               </a>
               <div>/</div>
-              <a href="https://github.com/AayushG02" target="_blank">
+              <a href="https://github.com/aayushgirdhar" target="_blank">
                 <div className="social-item">GitHub</div>
               </a>
               <div>/</div>
