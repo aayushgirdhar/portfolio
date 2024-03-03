@@ -9,7 +9,7 @@ const ProjectList = () => {
       title: "LuxeThreads",
       subTitle: "E-commerce Store",
       stack: "MERN, JWT, Stripe, Cloudinary",
-      url: "https://luxethreads.netlify.app",
+      url: "https://luxethreads.vercel.app",
     },
     {
       title: "Workout Buddy",
