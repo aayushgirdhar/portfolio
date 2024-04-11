@@ -1,11 +1,7 @@
 import { useState, useEffect } from "react";
 import PreLoader from "./components/PreLoader/PreLoader";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
-import Quote from "./components/Quote/Quote";
-import Contact from "./components/Contact/Contact";
-import ProjectSection from "./components/ProjectSection/ProjectsSection";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   const [isloading, setLoading] = useState(false);
 
@@ -21,20 +17,11 @@ function App() {
   }, []);
 
   return (
-    <>
-      {isloading ? (
-        <PreLoader />
-      ) : (
-        <>
-          <ScrollToTop />
-          <Navbar />
-          <Hero />
-          <Quote />
-          <ProjectSection />
-          <Contact />
-        </>
-      )}
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={isloading ? <PreLoader /> : <Home />} />
+      </Routes>
+    </Router>
   );
 }
 

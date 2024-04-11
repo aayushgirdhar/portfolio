@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { app } from "../../firebase";
@@ -20,10 +20,11 @@ const Contact = () => {
         email,
         msg,
       });
+      setLoading(false);
     } catch (error) {
+      setLoading(false);
       console.log(error);
     }
-    setLoading(false);
     toast.success("Message sent successfully!", {
       duration: 2000,
       position: "bottom-left",
@@ -57,7 +58,7 @@ const Contact = () => {
         transition={{ type: "spring", duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Interested in working with me? Feel free to reach out, I'll respond
+        Interested in working with me? Feel free to reach out, I&apos;ll respond
         shortly!
       </motion.p>
       <div className="contact-wrapper">

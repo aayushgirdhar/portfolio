@@ -1,4 +1,3 @@
-import React from "react";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import { motion } from "framer-motion";
 import ProjectCard from "../ProjectCard/ProjectCard";
@@ -8,20 +7,20 @@ const ProjectList = () => {
     {
       title: "LuxeThreads",
       subTitle: "E-commerce Store",
-      stack: "MERN, JWT, Stripe, Cloudinary",
+      stack: "MERN, JWT, OAuth, Stripe, Cloudinary",
       url: "https://luxethreads.vercel.app",
+    },
+    {
+      title: "Keepr",
+      subTitle: "Note Taking App",
+      stack: "ReactJS, Firebase",
+      url: "https://keepr-app.vercel.app",
     },
     {
       title: "Workout Buddy",
       subTitle: "Workout Tracker",
       stack: "MERN, JWT",
       url: "https://workoutbuddyapp.netlify.app",
-    },
-    {
-      title: "Keepr",
-      subTitle: "Note Taking App",
-      stack: "ReactJS",
-      url: "https://keeprapp.netlify.app",
     },
   ];
 
@@ -57,8 +56,12 @@ const ProjectList = () => {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        There's More
-        <a href="https://github.com/aayushgirdhar" target="_blank">
+        There&apos;s More
+        <a
+          href="https://github.com/aayushgirdhar"
+          target="_blank"
+          rel="noreferrer"
+        >
           View all projects <ArrowForwardOutlinedIcon fontSize="large" />
         </a>
       </motion.p>
